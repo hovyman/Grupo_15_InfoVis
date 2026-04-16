@@ -1,0 +1,142 @@
+[
+  {
+    "Equipo": "Arsenal",
+    "Goles Totales": 57,
+    "Goleador": "Viktor Gyökeres",
+    "Goles del goleador": 11,
+    "Dependencia": "19%"
+  },
+  {
+    "Equipo": "Aston Villa",
+    "Goles Totales": 40,
+    "Goleador": "Ollie Watkins",
+    "Goles del goleador": 9,
+    "Dependencia": "23%"
+  },
+  {
+    "Equipo": "Bournemouth",
+    "Goles Totales": 36,
+    "Goleador": "Eli Junior Kroupi",
+    "Goles del goleador": 9,
+    "Dependencia": "25%"
+  },
+  {
+    "Equipo": "Brentford",
+    "Goles Totales": 45,
+    "Goleador": "Igor Thiago",
+    "Goles del goleador": 19,
+    "Dependencia": "42%"
+  },
+  {
+    "Equipo": "Brighton Hove Albion",
+    "Goles Totales": 40,
+    "Goleador": "Danny Welbeck",
+    "Goles del goleador": 12,
+    "Dependencia": "30%"
+  },
+  {
+    "Equipo": "Burnley",
+    "Goles Totales": 30,
+    "Goleador": "Zian Flemming",
+    "Goles del goleador": 8,
+    "Dependencia": "27%"
+  },
+  {
+    "Equipo": "Chelsea",
+    "Goles Totales": 52,
+    "Goleador": "João Pedro",
+    "Goles del goleador": 14,
+    "Dependencia": "27%"
+  },
+  {
+    "Equipo": "Crystal Palace",
+    "Goles Totales": 33,
+    "Goleador": "Jean-Philippe Mateta",
+    "Goles del goleador": 8,
+    "Dependencia": "24%"
+  },
+  {
+    "Equipo": "Everton",
+    "Goles Totales": 35,
+    "Goleador": "Thierno Barry",
+    "Goles del goleador": 6,
+    "Dependencia": "17%"
+  },
+  {
+    "Equipo": "Fulham",
+    "Goles Totales": 39,
+    "Goleador": "Harry Wilson",
+    "Goles del goleador": 10,
+    "Dependencia": "26%"
+  },
+  {
+    "Equipo": "Leeds United",
+    "Goles Totales": 37,
+    "Goleador": "Dominic Calvert-Lewin",
+    "Goles del goleador": 10,
+    "Dependencia": "27%"
+  },
+  {
+    "Equipo": "Liverpool",
+    "Goles Totales": 48,
+    "Goleador": "Hugo Ekitiké",
+    "Goles del goleador": 11,
+    "Dependencia": "23%"
+  },
+  {
+    "Equipo": "Manchester City",
+    "Goles Totales": 69,
+    "Goleador": "Erling Haaland",
+    "Goles del goleador": 22,
+    "Dependencia": "32%"
+  },
+  {
+    "Equipo": "Manchester United",
+    "Goles Totales": 53,
+    "Goleador": "Bryan Mbeumo",
+    "Goles del goleador": 9,
+    "Dependencia": "17%"
+  },
+  {
+    "Equipo": "Newcastle United",
+    "Goles Totales": 44,
+    "Goleador": "Bruno Guimarães",
+    "Goles del goleador": 9,
+    "Dependencia": "20%"
+  },
+  {
+    "Equipo": "Nottingham Forest",
+    "Goles Totales": 31,
+    "Goleador": "Morgan Gibbs-White",
+    "Goles del goleador": 9,
+    "Dependencia": "29%"
+  },
+  {
+    "Equipo": "Sunderland",
+    "Goles Totales": 29,
+    "Goleador": "Brian Brobbey",
+    "Goles del goleador": 6,
+    "Dependencia": "21%"
+  },
+  {
+    "Equipo": "Tottenham Hotspur",
+    "Goles Totales": 37,
+    "Goleador": "Richarlison",
+    "Goles del goleador": 9,
+    "Dependencia": "24%"
+  },
+  {
+    "Equipo": "West Ham United",
+    "Goles Totales": 34,
+    "Goleador": "Jarrod Bowen",
+    "Goles del goleador": 8,
+    "Dependencia": "24%"
+  },
+  {
+    "Equipo": "Wolverhampton",
+    "Goles Totales": 22,
+    "Goleador": "Tolu Arokodare",
+    "Goles del goleador": 3,
+    "Dependencia": "14%"
+  }
+]

@@ -1,66 +1,118 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Ayudantía InfoVis</title>
-        <link href="style.css" rel="stylesheet"/>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dependencia ofensiva</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
 
-    </head>
+<body style="font-family: Arial; text-align: center; margin: 0;">
 
-    <body>
+<h2 style="margin-bottom: 5px;">¿Qué equipos dependen más de su goleador?</h2>
 
-        <div>
+<p style="color: gray; margin-top: 0;">
+  Datos correspondientes a la Premier League temporada 2025–2026
+</p>
 
-            <h2 class="subtitulo">Ejemplo de texto</h2>
+<p style="font-size: 12px; color: gray;">
+  El tamaño de las pelotas representa los goles totales del equipo
+</p>
 
-            <h1>Hola Mundo</h1>
-            <h2>Hola Chile</h2>
-            <h3>Hola Santiago</h3>
-            <p>Hola San Joaquín</p>
+<div id="chart" style="width:1100px;height:600px;margin:auto;"></div>
 
-        </div>
+<script>
 
-        <div id="imagen">
-            <h2 class="subtitulo">Ejemplo imagen</h2>
+var data = [
+  {Equipo:"Arsenal ", dep:19, total:57},
+  {Equipo:"Aston Villa ", dep:23, total:40},
+  {Equipo:"Bournemouth ", dep:25, total:36},
+  {Equipo:"Brentford ", dep:42, total:45},
+  {Equipo:"Brighton ", dep:30, total:40},
+  {Equipo:"Burnley ", dep:27, total:30},
+  {Equipo:"Chelsea ", dep:27, total:52},
+  {Equipo:"Crystal Palace ", dep:24, total:33},
+  {Equipo:"Everton ", dep:17, total:35},
+  {Equipo:"Fulham ", dep:26, total:39},
+  {Equipo:"Leeds ", dep:27, total:37},
+  {Equipo:"Liverpool ", dep:23, total:48},
+  {Equipo:"Manchester City ", dep:32, total:69},
+  {Equipo:"Manchester United ", dep:17, total:53},
+  {Equipo:"Newcastle ", dep:20, total:44},
+  {Equipo:"Nottingham Forest ", dep:29, total:31},
+  {Equipo:"Sunderland ", dep:21, total:29},
+  {Equipo:"Tottenham ", dep:24, total:37},
+  {Equipo:"West Ham ", dep:24, total:34},
+  {Equipo:"Wolverhampton ", dep:14, total:22}
+];
 
-            <img src="kirby.jpg" alt="imagen de kirby">
+// ordenar
+data.sort(function(a,b){
+  return a.dep - b.dep;
+});
 
-        </div>
+var equipos = [];
+var dependencia = [];
+var sizes = [];
+var colors = [];
 
-        <div>
-            <h2 class="subtitulo">Ejemplo inputs</h2>
+for (var i = 0; i < data.length; i++) {
+  equipos.push(data[i].Equipo);
+  dependencia.push(data[i].dep);
+  sizes.push(data[i].total / 2);
 
-            <div id="fila-inputs">
+  if (data[i].dep >= 35) {
+    colors.push("red");
+  } else if (data[i].dep >= 30) {
+    colors.push("orange");
+  } else {
+    colors.push("blue");
+  }
+}
 
-                <div>
-                    <h3>Texto</h3>
-                    <input type="text">
-                </div>
+var trace = {
+  x: dependencia,
+  y: equipos,
+  mode: "markers",
+  type: "scatter",
+  marker: {
+    size: sizes,
+    color: colors
+  }
+};
 
-                <div>
-                    <h3>Botones de opción</h3>
-                    <input type="radio" value="HTML"> HTML <br>
-                    <input type="radio" value="CSS"> CSS <br>
-                    <input type="radio" value="JavaScript"> JavaScript <br>
-                </div>
+var layout = {
+  xaxis: {
+    title: "Dependencia (%)",
+    range: [0,50]
+  },
+  yaxis: {
+    autorange: "reversed"
+  },
+  margin: {
+    l: 180,
+    t: 10
+  },
+  shapes: [
+    {
+      type: "line",
+      x0: 25,
+      x1: 25,
+      y0: -1,
+      y1: data.length,
+      line: {
+        dash: "dash",
+        color: "gray"
+      }
+    }
+  ]
+};
 
-                <div>
-                    <h3>Botones</h3>
-                    <input type="submit" value="soy un botón">
-                </div>
+Plotly.newPlot("chart", [trace], layout, {
+  displayModeBar: false,
+  staticPlot: true
+});
 
-            </div>
+</script>
 
-        </div>
-
-        
-
-        
-
-
-
-    </body>
-
+</body>
 </html>
-
-

@@ -222,6 +222,15 @@
       margin-top: 4px;
       line-height: 1.35;
     }
+
+    .btn-icon { /* Logos de los equipos de futbol del proyecto */
+      display: inline; /* display alineado con la letra y el logo  */
+      width: 2.0em; /* Ancho acorde a medida de la letras */
+      height: 2.0em; /* Alto acorde a medida de la letras*/
+      object-fit: contain; /* Imagen dentro del botón  */
+      vertical-align: middle;
+      margin: 2px; /* pequeño margen entre la letra y el logo  */
+    }
 </style>
 </head>
 
@@ -273,11 +282,12 @@ console.log("Callback Protobject registrado en index.html");
     <div id="side">
       <div class="controls-title">Liga</div>
       <div class="tabs">
-        <button class="tab active" onclick="switchLeague('premier', this)">🏴 Premier League</button>
-        <button class="tab" onclick="switchLeague('laliga', this)">🇪🇸 La Liga</button>
-        <button class="tab" onclick="switchLeague('bundesliga', this)">🇩🇪 Bundesliga</button>
-        <button class="tab" onclick="switchLeague('seriea', this)">🇮🇹 Serie A</button>
-        <button class="tab" onclick="switchLeague('ligue1', this)">🇫🇷 Ligue 1</button>
+        <button class="tab active" onclick="switchLeague('premier', this)"><img src="https://assets.football-logos.cc/logos/england/1500x1500/english-premier-league.4d68127f.png" alt="Premier League Logo" class="btn-icon">Premier League</button>
+        <!-- Alexis Sánchez no debió haberse ido del Arsenal -->
+        <button class="tab" onclick="switchLeague('laliga', this)"><img src="https://www.vhv.rs/dpng/d/474-4747008_download-logo-laliga-spain-football-svg-eps-png.png" alt="Logo antiguo de LaLiga" class="btn-icon">La Liga</button>
+        <button class="tab" onclick="switchLeague('bundesliga', this)"><img src="https://assets.football-logos.cc/logos/germany/1500x1500/bundesliga.77719ba2.png" alt="Logo Bundesliga" class="btn-icon">Bundesliga</button>
+        <button class="tab" onclick="switchLeague('seriea', this)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStomfeyxQRR9RuMoRHi40ed4xI_OMYg6yQUyX-3qo43Q&s=10" alt="Logo Serie A" class="btn-icon"> Serie A</button>
+        <button class="tab" onclick="switchLeague('ligue1', this)"><img src="https://vectorseek.com/wp-content/uploads/2024/04/LIGUE-1-New-Logo-Vector.png" alt="Logo Ligue 1" class="btn-icon"> Ligue 1</button>
       </div>
 
       <div id="panel" class="empty">
